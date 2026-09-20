@@ -200,7 +200,7 @@ namespace YTSubConverter.Shared.Formats
 
         public void MergeIdenticallyFormattedSections()
         {
-            return; // TwitchChatOffset: we use the same Section object for several lines, so merging sections causes a bug for us
+            return; // TwitchChatCC: we use the same Section object for several lines, so merging sections causes a bug for us
             foreach (Line line in Lines)
             {
                 MergeIdenticallyFormattedSections(line);

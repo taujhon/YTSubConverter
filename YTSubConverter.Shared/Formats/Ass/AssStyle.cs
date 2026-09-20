@@ -38,14 +38,14 @@ namespace YTSubConverter.Shared.Formats.Ass
             set;
         }
 
-        // TwitchChatOffset addition - this will override the window and make a black opaque background instead
+        // TwitchChatCC addition - this will override the window and make a black opaque background instead
         public bool BackgroundEnable
         {
             get;
             set;
         }
 
-        // TwitchChatOffset addition
+        // TwitchChatCC addition
         public byte WindowOpacity
         {
             get;

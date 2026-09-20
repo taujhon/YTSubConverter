@@ -12,7 +12,7 @@ namespace YTSubConverter.Shared.Formats
 {
     public class YttDocument : SubtitleDocument
     {
-        // TwitchChatOffset: for our use case, these zwsp's are not needed and cause problems
+        // TwitchChatCC: for our use case, these zwsp's are not needed and cause problems
         //  since we have them on every YTSubConverter.Shared.Line but not on every actual displayed line
         //  (since a single YTSubConverter.Shared.Line can contain newline characters \n and thus in actual fact multiple lines)
         // as such, the first displayed line contains zwsp's but none of the other displayed lines do,
@@ -971,7 +971,7 @@ namespace YTSubConverter.Shared.Formats
                    };
         }
 
-        // TwitchChatOffset: we always want the Twitch chat to be left-justified,
+        // TwitchChatCC: we always want the Twitch chat to be left-justified,
         // so we modify this method
         private static int GetJustificationId(AnchorPoint anchorPoint)
         {

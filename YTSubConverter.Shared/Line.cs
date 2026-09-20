@@ -81,7 +81,7 @@ namespace YTSubConverter.Shared
             set;
         } = true;
 
-        // TwitchChatOffset:
+        // TwitchChatCC:
         // will result in a double window if dark text is present and AndroidDarkTextHackAllowed is true
         // should not be exactly 255 as YouTube is known for overriding that sometimes; 254 is fine
         // WARNING: this setting is for YTT only
